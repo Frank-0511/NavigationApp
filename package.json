@@ -1,9 +1,13 @@
 {
-  "name": "NavigationApp",
+  "name": "navigation-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android:clean": "cd android && gradlew clean && cd ..",
+    "android:start": "npx react-native start --reset-cache",
+    "android:run": "npx react-native run-android",
+    "android:full": "npm run android:clean && start cmd /k npm run android:start && npm run android:run",
+    "android:open": "emulator @Medium_Phone -no-boot-anim -no-snapshot-save -no-audio",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
