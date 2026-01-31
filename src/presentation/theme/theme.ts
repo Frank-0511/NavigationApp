@@ -16,6 +16,8 @@ export const globalStyles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: globalColors.background,
+    display: 'flex',
+    rowGap: 12,
   },
 
   primaryButton: {
@@ -24,7 +26,6 @@ export const globalStyles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     width: '100%',
-    margin: 12,
   },
 
   buttonText: {
